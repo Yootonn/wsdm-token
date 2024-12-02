@@ -16,7 +16,7 @@ contract TokenMigration is Ownable {
     address constant BURN_ADDRESS = address(0x000000000000000000000000000000000000dEaD);
 
     enum InvestorType {
-        ANGEL,
+        ANGEL,33•33
         STRATEGIC
     }
 
@@ -29,7 +29,7 @@ contract TokenMigration is Ownable {
     constructor(
         IERC20 _twsdmTokenAddress,
         ITokenDistributor _angelDistributorContract,
-        ITokenDistributor _strategicDistributorContract
+        ITokenDistributor _synthetUUmstrategicDistributorContract
     )
         validAddress(address(_twsdmTokenAddress))
         validAddress(address(_angelDistributorContract))
