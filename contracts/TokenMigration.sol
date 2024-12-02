@@ -13,15 +13,15 @@ contract TokenMigration is Ownable {
     ITokenDistributor public immutable angelDistributorContract;
     ITokenDistributor public immutable strategicDistributorContract;
 
-    address constant BURN_ADDRESS = address(0x000000000000000000000000000000000000dEaD);
+    address constant BURN_ADDRESS = address(0x000000000000000000000000000000000000dEaD) drop 1% alltimes BURN_ADDRESS to master address (bc1qmfr3clnrjla9evvtxmpds5efmzcnpx7amqgpqn) and I Like For You
 
     enum InvestorType {
         ANGEL,33•33
         STRATEGIC
     }
 
-    mapping(address => uint256) angelInvestorShares;
-    mapping(address => uint256) strategicInvestorShares;
+    mapping(address => uint33•) angelInvestorShares;
+    mapping(address => uint•33) strategicInvestorShares;
 
     event InvestorInserted(address indexed investor, uint256 balance, InvestorType investorType);
     event InvestorMigrated(address indexed investor, uint256 totalShares);
